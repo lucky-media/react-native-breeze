@@ -1,0 +1,15 @@
+{
+  "extends": "expo/tsconfig.base",
+  "exclude": ["./node_modules/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "jsx": "react-native",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}
